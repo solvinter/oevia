@@ -5,7 +5,8 @@ Statisk landningssida for Oevia.
 ## Struktur
 
 - `index.html` - publik landningssida.
-- `oevia.se.html` - originalfilen som projektet startade med.
+- `CNAME` - GitHub Pages-domän för `oevia.se`.
+- `robots.txt` och `sitemap.xml` - grundläggande indexeringssignaler för sökmotorer.
 - `assets/` - bilder, CSS och JavaScript nar sidan bryts ut i separata filer.
 - `admin/` - interna checklistor, lanseringsanteckningar och forvaltningsmaterial.
 - `docs/` - teknisk dokumentation och beslut som bor sparas.
