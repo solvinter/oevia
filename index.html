@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oevia – privatläkare för stress, ångest, sömn och depression</title>
   <meta name="description" content="Privatläkare med medicinsk behandling av ångest, sömn, depression och stress." />
+  <link rel="canonical" href="https://oevia.se/" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="Oevia" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oevia.se/" />
+  <meta property="og:title" content="Oevia – privatläkare i Göteborg" />
+  <meta property="og:description" content="Medicinsk behandling av stress, ångest, sömnproblem och depression med strukturerad läkarbedömning och uppföljning." />
+  <meta property="og:image" content="https://oevia.se/assets/images/oevia-consultation.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Oevia",
+      "url": "https://oevia.se/",
+      "email": "kontakt@oevia.se",
+      "description": "Privatläkarmottagning i Göteborg för medicinsk behandling av stress, ångest, sömnproblem och depression.",
+      "areaServed": "Göteborg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Göteborg",
+        "addressCountry": "SE"
+      }
+    }
+  </script>
   <style>
     :root {
       --bg: #fbf7ef;
@@ -261,6 +286,34 @@
       border-bottom: 1px solid rgba(184, 135, 52, 0.14);
     }
 
+    .about {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 58px;
+      padding: 4px 0 68px;
+      border-bottom: 1px solid rgba(184, 135, 52, 0.14);
+    }
+
+    .about-label {
+      color: var(--gold-dark);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .about-copy {
+      display: grid;
+      gap: 18px;
+      max-width: 720px;
+    }
+
+    .about-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
     .statement {
       display: flex;
       align-items: center;
@@ -327,6 +380,12 @@
       .cards {
         grid-template-columns: 1fr;
         padding: 44px 0;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 0 44px;
       }
 
       .card,
@@ -420,6 +479,14 @@
             <h2>Återbesök</h2>
             <p>Effekt, biverkningar och funktion i vardagen utvärderas och behandlingen justeras löpande.</p>
           </article>
+        </section>
+
+        <section class="about" aria-label="Om Oevia">
+          <div class="about-label">Privat vård i Göteborg</div>
+          <div class="about-copy">
+            <p>Oevia är en privatläkarmottagning för dig som söker medicinsk hjälp vid stressrelaterad ohälsa, ångest, sömnproblem, nedstämdhet eller depression.</p>
+            <p>Bedömningen utgår från din aktuella situation, tidigare behandlingar och hur besvären påverkar vardagen. Behandlingen följs upp över tid med fokus på effekt, biverkningar och fungerande nästa steg.</p>
+          </div>
         </section>
       </div>
 
