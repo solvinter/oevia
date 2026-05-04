@@ -3,299 +3,537 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oevia – privatläkare för stress, ångest, sömn och depression</title>
-  <meta name="description" content="Privatläkare med medicinsk behandling av ångest, sömn, depression och stress." />
 
-  <!-- Google tag (gtag.js) -->
+  <title>OEVIA – privatläkare för stress, ångest, sömn och depression</title>
+  <meta name="description" content="Privatläkare med medicinsk behandling av ångest, sömn, depression och stress." />
+  <link rel="canonical" href="https://oevia.se/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:site_name" content="OEVIA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oevia.se/" />
+  <meta property="og:title" content="OEVIA – privatläkare i Göteborg" />
+  <meta property="og:description" content="Medicinsk behandling av stress, ångest, sömnproblem och depression med strukturerad läkarbedömning och uppföljning." />
+  <meta property="og:image" content="https://oevia.se/assets/images/oevia-hero-optimized.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHF216WG4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-EGHF216WG4');
-    gtag('config', 'AW-18130111055');
   </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "OEVIA",
+      "url": "https://oevia.se/",
+      "email": "kontakt@oevia.se",
+      "description": "Privatläkarmottagning i Göteborg för medicinsk behandling av stress, ångest, sömnproblem och depression.",
+      "areaServed": "Sverige",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Göteborg",
+        "addressCountry": "SE"
+      }
+    }
+  </script>
+
   <style>
     :root {
-      --bg: #fbf7ef;
-      --paper: #fffdf8;
-      --text: #242421;
-      --muted: #666157;
-      --soft: #efe7d8;
-      --gold: #b88734;
-      --gold-dark: #8f6624;
-      --line: #e2d6c2;
+      --bg: #f3f6f7;
+      --paper: #ffffff;
+      --paper-soft: #f8faf9;
+      --text: #1e2528;
+      --muted: #66747b;
+
+      --blue: #4f6f7f;
+      --blue-dark: #263f4a;
+      --blue-soft: #dbe6ea;
+
+      --sand: #c7a46a;
+      --sand-soft: #e4d2ad;
+      --sand-dark: #927349;
+
+      --line: #dde5e7;
+      --shadow: rgba(36, 57, 66, 0.13);
     }
 
     * { box-sizing: border-box; }
 
-    body {
+    html, body {
       margin: 0;
+      overflow-x: hidden;
+    }
+
+    body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
-        radial-gradient(circle at top right, rgba(184, 135, 52, 0.16), transparent 34%),
-        linear-gradient(135deg, #fffdf8 0%, var(--bg) 55%, #f2eadb 100%);
+        radial-gradient(circle at 82% 10%, rgba(79,111,127,0.12), transparent 32rem),
+        radial-gradient(circle at 10% 42%, rgba(199,164,106,0.08), transparent 26rem),
+        linear-gradient(135deg, #ffffff 0%, var(--bg) 55%, #e9eff1 100%);
       color: var(--text);
       line-height: 1.55;
     }
 
     .wrap {
-      width: min(1120px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 48px));
       margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 700px;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.96) 31%, rgba(255,255,255,0.63) 55%, rgba(255,255,255,0.12) 78%),
+        url("assets/images/oevia-hero-optimized.jpg") right center / auto 100% no-repeat,
+        linear-gradient(135deg, #ffffff, #eef3f5);
+      border-bottom: 1px solid var(--line);
+      box-shadow: inset 0 -44px 84px rgba(243,246,247,0.78);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 34%;
+      z-index: -1;
+      background: linear-gradient(180deg, rgba(243,246,247,0), rgba(243,246,247,0.96));
     }
 
     header {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 34px 0 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 26px;
+      padding: 54px 0 38px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
-      letter-spacing: 0.16em;
-      font-size: 22px;
+      gap: 16px;
+      font-size: 24px;
       font-weight: 500;
+      letter-spacing: 0.18em;
     }
 
     .ring {
-      width: 34px;
-      height: 34px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      border: 4px solid var(--gold);
-      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.9), 0 0 0 1px rgba(143,102,36,0.25);
+      border: 4px solid var(--sand);
+      background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.95), rgba(199,164,106,0.08));
+      box-shadow:
+        inset 0 0 0 2px rgba(255,255,255,0.9),
+        0 0 0 1px rgba(146,115,73,0.18),
+        0 12px 26px rgba(79,111,127,0.12);
+      flex: 0 0 auto;
     }
 
     .location {
+      color: var(--blue-dark);
       font-size: 13px;
-      letter-spacing: 0.12em;
+      font-weight: 700;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      min-height: 640px;
-      background: rgba(255, 253, 248, 0.78);
-      border: 1px solid var(--line);
-      border-radius: 34px;
-      overflow: hidden;
-      box-shadow: 0 30px 90px rgba(73, 54, 24, 0.12);
     }
 
     .hero-copy {
-      padding: 72px 64px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      width: min(570px, 52%);
+      padding: 18px 0 104px;
     }
 
     h1 {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(42px, 5vw, 66px);
+      font-size: clamp(42px, 4.9vw, 68px);
       line-height: 1.05;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.035em;
       font-weight: 500;
+      text-wrap: balance;
     }
 
-    .gold-line {
-      width: 48px;
+    .accent-line {
+      width: 56px;
       height: 2px;
-      background: var(--gold);
       margin: 30px 0 28px;
+      background: linear-gradient(90deg, var(--blue), var(--sand-soft));
     }
 
     .lead {
-      max-width: 570px;
-      font-size: 19px;
+      max-width: 520px;
+      margin: 0 0 14px;
       color: var(--muted);
-      margin: 0 0 12px;
+      font-size: 18px;
     }
 
     .cta-row {
       display: flex;
-      gap: 18px;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: 34px;
+      gap: 22px;
+      margin-top: 36px;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 54px;
-      padding: 0 28px;
+      min-height: 56px;
+      padding: 0 30px;
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+      color: #fff;
       text-decoration: none;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      box-shadow: 0 14px 32px rgba(184, 135, 52, 0.28);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      box-shadow: 0 16px 34px rgba(38,63,74,0.25);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(79,111,127,0.28);
+      outline-offset: 4px;
     }
 
     .trust {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .hero-image {
       position: relative;
-      min-height: 420px;
-      background:
-        linear-gradient(90deg, rgba(255,253,248,0.2), rgba(255,253,248,0)),
-        url("oevia-consultation.jpg") center/cover no-repeat;
+      padding-left: 22px;
+      color: var(--muted);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
     }
 
-    .hero-image::after {
+    .trust::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(107,79,30,0.08));
+      left: 0;
+      top: 0.45em;
+      width: 10px;
+      height: 10px;
+      border: 1.5px solid var(--sand);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(199,164,106,0.11);
+    }
+
+    main {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(79,111,127,0.07), transparent 24rem),
+        linear-gradient(180deg, rgba(255,255,255,0.52), rgba(243,246,247,0));
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
-      margin: 46px 0 0;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      overflow: hidden;
+      padding: 62px 0 64px;
+      border-bottom: 1px solid var(--line);
     }
 
     .card {
-      padding: 34px 30px;
+      padding: 0 44px;
+      text-align: center;
       border-right: 1px solid var(--line);
     }
 
-    .card:last-child { border-right: none; }
+    .card:first-child { padding-left: 0; }
+
+    .card:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
 
     .icon {
-      color: var(--gold);
-      font-size: 28px;
-      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 20px;
+      color: var(--blue);
+      font-size: 30px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.78);
+      box-shadow: inset 0 0 0 1px rgba(79,111,127,0.15);
     }
 
     .card h2 {
-      font-size: 20px;
-      margin: 0 0 10px;
-      font-weight: 650;
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 500;
     }
 
     .card p {
-      margin: 0;
+      max-width: 290px;
+      margin: 0 auto;
       color: var(--muted);
       font-size: 16px;
     }
 
+    .about {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 58px;
+      padding: 4px 0 68px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-label {
+      color: var(--blue-dark);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .about-copy {
+      display: grid;
+      gap: 18px;
+      max-width: 720px;
+    }
+
+    .about-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .statement-band {
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.94), rgba(246,242,234,0.72)),
+        radial-gradient(circle at 16% 50%, rgba(199,164,106,0.12), transparent 20rem);
+      border-bottom: 1px solid var(--line);
+    }
+
     .statement {
-      margin: 46px 0 0;
-      padding: 34px 38px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, rgba(184,135,52,0.12), rgba(255,253,248,0.75));
-      border: 1px solid var(--line);
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 36px;
+      padding: 42px 0;
     }
 
-    .statement .ring { width: 56px; height: 56px; flex: 0 0 auto; }
+    .statement .ring {
+      width: 66px;
+      height: 66px;
+      border-width: 6px;
+    }
 
     .statement p {
+      max-width: 860px;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(22px, 2.8vw, 30px);
-      line-height: 1.3;
+      font-size: clamp(24px, 2.7vw, 32px);
+      line-height: 1.32;
     }
 
-    .statement span { color: var(--gold-dark); }
+    .statement span {
+      color: var(--blue-dark);
+    }
 
     footer {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 18px;
       flex-wrap: wrap;
-      padding: 32px 0 46px;
+      padding: 32px 0 44px;
       color: var(--muted);
       font-size: 15px;
     }
 
     footer strong {
-      color: var(--gold-dark);
-      letter-spacing: 0.12em;
+      color: var(--blue-dark);
+      letter-spacing: 0.16em;
     }
 
-    @media (max-width: 860px) {
-      header { align-items: flex-start; gap: 16px; flex-direction: column; }
-      .hero { grid-template-columns: 1fr; }
-      .hero-copy { padding: 44px 28px; }
-      .hero-image { min-height: 360px; order: -1; }
-      .cards { grid-template-columns: 1fr; }
-      .card { border-right: none; border-bottom: 1px solid var(--line); }
-      .card:last-child { border-bottom: none; }
-      .statement { align-items: flex-start; flex-direction: column; }
+    footer a {
+      color: var(--blue-dark);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(79,111,127,0.25);
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        min-height: auto;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.82) 58%, #fff 100%),
+          url("assets/images/oevia-hero-optimized.jpg") center top / cover no-repeat,
+          linear-gradient(135deg, #ffffff, #eef3f5);
+      }
+
+      header {
+        padding: 34px 0 250px;
+      }
+
+      .hero-copy {
+        width: 100%;
+        padding: 0 0 52px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        padding: 44px 0;
+      }
+
+      .card,
+      .card:first-child,
+      .card:last-child {
+        padding: 28px 0;
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .card:first-child { padding-top: 0; }
+
+      .card:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 0 44px;
+      }
+
+      .statement {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: 100%;
+        padding-inline: 16px;
+      }
+
+      header {
+        padding-bottom: 220px;
+      }
+
+      .brand {
+        font-size: 21px;
+      }
+
+      .location {
+        max-width: 100%;
+        font-size: 12px;
+        letter-spacing: 0.09em;
+        line-height: 1.4;
+      }
+
+      h1 {
+        font-size: clamp(38px, 12vw, 48px);
+      }
+
+      .lead {
+        width: 100%;
+        font-size: 17px;
+      }
+
+      .button {
+        width: 100%;
+        padding: 0 22px;
+        font-size: 13px;
+        letter-spacing: 0.06em;
+      }
+
+      .trust {
+        width: 100%;
+      }
+
+      footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand"><span class="ring" aria-hidden="true"></span>OEVIA</div>
-      <div class="location">Privatläkarmottagning i Göteborg</div>
-    </header>
 
-    <main>
-      <section class="hero">
+<body>
+  <div class="page">
+    <section class="hero">
+      <div class="wrap">
+        <header>
+          <div class="brand"><span class="ring" aria-hidden="true"></span>OEVIA</div>
+          <div class="location">Privatläkarmottagning i Göteborg · online i Sverige</div>
+        </header>
+
         <div class="hero-copy">
           <h1>Medicinsk behandling av stress, ångest, sömnproblem och depression.</h1>
-          <div class="gold-line"></div>
+          <div class="accent-line"></div>
+
           <p class="lead">Oevia erbjuder läkarbedömning, diagnostik och behandling med tid att förstå hela situationen.</p>
-          <p class="lead">Behandlingen är strukturerad och bygger på utvärdering och justering över tid.</p>
+          <p class="lead">Behandlingen är strukturerad och följs upp över tid med fokus på effekt, biverkningar och fungerande nästa steg.</p>
 
           <div class="cta-row">
             <a class="button" href="https://www.bokadirekt.se/places/oevia-lakare-136179" target="_blank" rel="noopener">Boka tid via BokaDirekt</a>
-            <div class="trust">Tryggt. Professionellt. Personligt.</div>
+            <div class="trust">Diskret. Medicinskt. Personligt.</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="hero-image" role="img" aria-label="Läkarbesök i lugn mottagningsmiljö"></div>
-      </section>
+    <main>
+      <div class="wrap">
+        <section class="cards" aria-label="Oevias arbetssätt">
+          <article class="card">
+            <div class="icon">◇</div>
+            <h2>Medicinsk bedömning</h2>
+            <p>För stressrelaterad ohälsa, ångest, nedstämdhet, trötthet och sömnproblem.</p>
+          </article>
 
-      <section class="cards" aria-label="Oevias arbetssätt">
-        <article class="card">
-          <div class="icon">◇</div>
-          <h2>Medicinsk bedömning</h2>
-          <p>För stressrelaterad ohälsa, ångest, nedstämdhet, trötthet och sömnproblem.</p>
-        </article>
-        <article class="card">
-          <div class="icon">☰</div>
-          <h2>Läkemedel & provtagning</h2>
-          <p>Behandling kan innefatta läkemedel, riktad provtagning och genomgång av tidigare behandling.</p>
-        </article>
-        <article class="card">
-          <div class="icon">↻</div>
-          <h2>Återbesök</h2>
-          <p>Effekt, biverkningar och funktion i vardagen utvärderas och behandlingen justeras löpande.</p>
-        </article>
-      </section>
+          <article class="card">
+            <div class="icon">☰</div>
+            <h2>Läkemedel & provtagning</h2>
+            <p>Behandling kan innefatta läkemedel, riktad provtagning och genomgång av tidigare behandling.</p>
+          </article>
 
-      <section class="statement">
-        <span class="ring" aria-hidden="true"></span>
-        <p>Oevia står för <span>omtanke, evidens och kvalitet</span> — medicinsk hjälp med tid, engagemang och helhetssyn.</p>
+          <article class="card">
+            <div class="icon">↻</div>
+            <h2>Återbesök</h2>
+            <p>Effekt, biverkningar och funktion i vardagen utvärderas och behandlingen justeras löpande.</p>
+          </article>
+        </section>
+
+        <section class="about" aria-label="Om Oevia">
+          <div class="about-label">Privat vård med kontinuitet</div>
+
+          <div class="about-copy">
+            <p>Oevia är en privatläkarmottagning för dig som söker medicinsk hjälp vid stressrelaterad ohälsa, ångest, sömnproblem, nedstämdhet eller depression.</p>
+            <p>Bedömningen utgår från din aktuella situation, tidigare behandlingar och hur besvären påverkar vardagen. Målet är inte enstaka punktinsatser, utan ett sammanhängande behandlingsförlopp med tydlig plan.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="statement-band">
+        <div class="wrap">
+          <section class="statement">
+            <span class="ring" aria-hidden="true"></span>
+            <p>Oevia står för <span>omtanke, evidens och kvalitet</span> — medicinsk hjälp med tid, struktur och helhetssyn.</p>
+          </section>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div><strong>OEVIA</strong> · Privatläkarmottagning i Göteborg</div>
-      <div>kontakt@oevia.se</div>
-    </footer>
+    <div class="wrap">
+      <footer>
+        <div><strong>OEVIA</strong> · Privatläkarmottagning i Göteborg</div>
+        <div>kontakt@oevia.se</div>
+        <div><a href="/om.html">Om Oevia</a></div>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
