@@ -47,20 +47,16 @@
     :root {
       --bg: #f3f6f7;
       --paper: #ffffff;
-      --paper-soft: #f8faf9;
       --text: #1e2528;
       --muted: #66747b;
 
       --blue: #4f6f7f;
       --blue-dark: #263f4a;
-      --blue-soft: #dbe6ea;
 
       --sand: #c7a46a;
       --sand-soft: #e4d2ad;
-      --sand-dark: #927349;
 
       --line: #dde5e7;
-      --shadow: rgba(36, 57, 66, 0.13);
     }
 
     * { box-sizing: border-box; }
@@ -72,10 +68,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 82% 10%, rgba(79,111,127,0.12), transparent 32rem),
-        radial-gradient(circle at 10% 42%, rgba(199,164,106,0.08), transparent 26rem),
-        linear-gradient(135deg, #ffffff 0%, var(--bg) 55%, #e9eff1 100%);
+      background: linear-gradient(135deg, #ffffff 0%, var(--bg) 60%, #e9eff1 100%);
       color: var(--text);
       line-height: 1.55;
     }
@@ -87,24 +80,12 @@
 
     .hero {
       min-height: 700px;
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
       background:
-        linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.96) 31%, rgba(255,255,255,0.63) 55%, rgba(255,255,255,0.12) 78%),
+        linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.96) 32%, rgba(255,255,255,0.64) 58%, rgba(255,255,255,0.08) 82%),
         url("assets/oevia-hero-optimized.jpg") right center / auto 100% no-repeat,
         linear-gradient(135deg, #ffffff, #eef3f5);
       border-bottom: 1px solid var(--line);
-      box-shadow: inset 0 -44px 84px rgba(243,246,247,0.78);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 34%;
-      z-index: -1;
-      background: linear-gradient(180deg, rgba(243,246,247,0), rgba(243,246,247,0.96));
+      box-shadow: inset 0 -36px 64px rgba(243,246,247,0.7);
     }
 
     header {
@@ -130,10 +111,7 @@
       border-radius: 50%;
       border: 4px solid var(--sand);
       background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.95), rgba(199,164,106,0.08));
-      box-shadow:
-        inset 0 0 0 2px rgba(255,255,255,0.9),
-        0 0 0 1px rgba(146,115,73,0.18),
-        0 12px 26px rgba(79,111,127,0.12);
+      box-shadow: 0 0 0 1px rgba(146,115,73,0.18);
       flex: 0 0 auto;
     }
 
@@ -157,7 +135,6 @@
       line-height: 1.05;
       letter-spacing: -0.035em;
       font-weight: 500;
-      text-wrap: balance;
     }
 
     .accent-line {
@@ -193,15 +170,9 @@
       color: #fff;
       text-decoration: none;
       font-size: 14px;
-      font-weight: 750;
-      letter-spacing: 0.11em;
-      text-transform: uppercase;
-      box-shadow: 0 16px 34px rgba(38,63,74,0.25);
-    }
-
-    .button:focus-visible {
-      outline: 3px solid rgba(79,111,127,0.28);
-      outline-offset: 4px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: 0 16px 34px rgba(38,63,74,0.22);
     }
 
     .trust {
@@ -233,7 +204,6 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0;
       padding: 62px 0 64px;
       border-bottom: 1px solid var(--line);
     }
@@ -245,7 +215,6 @@
     }
 
     .card:first-child { padding-left: 0; }
-
     .card:last-child {
       border-right: none;
       padding-right: 0;
@@ -309,8 +278,8 @@
 
     .statement-band {
       background:
-        linear-gradient(90deg, rgba(255,255,255,0.94), rgba(246,242,234,0.72)),
-        radial-gradient(circle at 16% 50%, rgba(199,164,106,0.12), transparent 20rem);
+        linear-gradient(90deg, rgba(255,255,255,0.94), rgba(246,242,234,0.62)),
+        radial-gradient(circle at 16% 50%, rgba(199,164,106,0.1), transparent 20rem);
       border-bottom: 1px solid var(--line);
     }
 
@@ -366,7 +335,7 @@
         min-height: auto;
         background:
           linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.82) 58%, #fff 100%),
-          url("assets/images/oevia-hero-optimized.jpg") center top / cover no-repeat,
+          url("assets/oevia-hero-optimized.jpg") center top / cover no-repeat,
           linear-gradient(135deg, #ffffff, #eef3f5);
       }
 
@@ -393,7 +362,6 @@
       }
 
       .card:first-child { padding-top: 0; }
-
       .card:last-child {
         padding-bottom: 0;
         border-bottom: none;
@@ -418,24 +386,16 @@
         padding-inline: 16px;
       }
 
-      header {
-        padding-bottom: 220px;
-      }
-
-      .brand {
-        font-size: 21px;
-      }
+      header { padding-bottom: 220px; }
+      .brand { font-size: 21px; }
 
       .location {
-        max-width: 100%;
         font-size: 12px;
         letter-spacing: 0.09em;
         line-height: 1.4;
       }
 
-      h1 {
-        font-size: clamp(38px, 12vw, 48px);
-      }
+      h1 { font-size: clamp(38px, 12vw, 48px); }
 
       .lead {
         width: 100%;
@@ -446,12 +406,9 @@
         width: 100%;
         padding: 0 22px;
         font-size: 13px;
-        letter-spacing: 0.06em;
       }
 
-      .trust {
-        width: 100%;
-      }
+      .trust { width: 100%; }
 
       footer {
         align-items: flex-start;
