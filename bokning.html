@@ -4,9 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Boka tid - OEVIA</title>
-  <meta name="description" content="Boka medicinsk konsultation hos OEVIA via BokaDirekt." />
+  <meta name="description" content="Boka medicinsk konsultation hos OEVIA för stress, ångest, sömnproblem och depression. Bokning sker via BokaDirekt." />
   <link rel="canonical" href="https://oevia.se/bokning.html" />
   <meta name="robots" content="noindex, follow" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "OEVIA",
+      "url": "https://oevia.se/bokning.html",
+      "email": "hello@oevia.se",
+      "description": "Boka medicinsk konsultation hos OEVIA för stress, ångest, sömnproblem och depression.",
+      "medicalSpecialty": ["Psychiatry", "PrimaryCare"],
+      "areaServed": ["Göteborg", "Sverige"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Göteborg",
+        "addressCountry": "SE"
+      }
+    }
+  </script>
 
   <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHF216WG4"></script>
@@ -126,6 +144,36 @@
       font-size: 18px;
     }
 
+    .details {
+      display: grid;
+      gap: 10px;
+      margin: 28px auto 0;
+      max-width: 430px;
+      color: var(--soft-text);
+      text-align: left;
+    }
+
+    .detail {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .detail strong {
+      display: block;
+      color: var(--brass-light);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .detail span {
+      display: block;
+      margin-top: 4px;
+      font-size: 15px;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -187,8 +235,19 @@
       <span>OEVIA</span>
     </div>
 
-    <h1>Boka tid</h1>
-    <p>Boka en medicinsk konsultation hos OEVIA. Du skickas vidare till OEVIA:s bokningssida hos BokaDirekt.</p>
+    <h1>Boka tid hos OEVIA</h1>
+    <p>Boka medicinsk konsultation vid stress, ångest, sömnproblem och depression. OEVIA tar emot i Göteborg och online i Sverige.</p>
+
+    <div class="details" aria-label="Bokningsinformation">
+      <div class="detail">
+        <strong>Vad bokas</strong>
+        <span>Medicinsk bedömning, diagnostik, behandling och uppföljning.</span>
+      </div>
+      <div class="detail">
+        <strong>Hur bokning sker</strong>
+        <span>Tider och praktisk bokning hanteras via BokaDirekt.</span>
+      </div>
+    </div>
 
     <a class="button" href="https://www.bokadirekt.se/places/oevia-lakare-136179" target="_blank" rel="noopener">Boka tid via BokaDirekt</a>
     <br />
