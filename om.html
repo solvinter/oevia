@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Om OEVIA - privatläkarmottagning i Göteborg</title>
+  <meta name="description" content="Om OEVIA, privatläkarmottagning i Göteborg och online i Sverige för medicinsk bedömning, utredning, behandling och uppföljning." />
+  <link rel="canonical" href="https://oevia.se/om.html" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:site_name" content="OEVIA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oevia.se/om.html" />
+  <meta property="og:title" content="Om OEVIA" />
+  <meta property="og:description" content="Kort information om OEVIA och hur mottagningen arbetar med medicinsk bedömning, behandling och uppföljning." />
+  <meta property="og:image" content="https://oevia.se/assets/oevia-logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHF216WG4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EGHF216WG4');
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "OEVIA",
+      "url": "https://oevia.se/om.html",
+      "email": "hello@oevia.se",
+      "description": "OEVIA är en privatläkarmottagning i Göteborg och online i Sverige för medicinsk bedömning, utredning, behandling och uppföljning.",
+      "medicalSpecialty": ["Psychiatry", "PrimaryCare"],
+      "areaServed": ["Göteborg", "Sverige"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Göteborg",
+        "addressCountry": "SE"
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg: #071018;
+      --bg-2: #0b1721;
+      --panel: rgba(17, 31, 42, 0.82);
+      --panel-strong: rgba(23, 41, 54, 0.94);
+      --text: #eef3f2;
+      --soft-text: #c3ced0;
+      --muted: #87979d;
+      --line: rgba(213, 226, 229, 0.16);
+      --brass: #c8a56b;
+      --brass-light: #f0d69a;
+      --silver: #d7e0df;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--bg);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+      background:
+        radial-gradient(circle at 50% -10rem, rgba(144, 178, 190, 0.18), transparent 30rem),
+        radial-gradient(circle at 82% 20%, rgba(200, 165, 107, 0.09), transparent 25rem),
+        linear-gradient(145deg, #081018 0%, #0b1721 50%, #071018 100%);
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 42px 0 54px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 70px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+
+    .ring {
+      --ring-thickness: 5px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      position: relative;
+      display: inline-block;
+      background: transparent;
+      filter:
+        drop-shadow(0 12px 18px rgba(0, 0, 0, 0.28))
+        drop-shadow(0 0 16px rgba(200, 165, 107, 0.18));
+      flex: 0 0 auto;
+    }
+
+    .ring::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(circle at 28% 18%, rgba(255, 251, 221, 0.72), transparent 24%),
+        repeating-conic-gradient(from 18deg, rgba(255, 244, 190, 0.34) 0deg 1.3deg, rgba(76, 48, 23, 0.18) 2deg 3.6deg, transparent 4.4deg 8.4deg),
+        conic-gradient(from 220deg, #f8e7ad 0deg, #ad7d45 48deg, #6f4d2c 82deg, #f2d38a 122deg, #5a3e25 174deg, #c89552 224deg, #fff1bb 272deg, #8b6235 318deg, #f8e7ad 360deg);
+      background-blend-mode: screen, soft-light, normal;
+      -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-thickness) - 1px), #000 calc(100% - var(--ring-thickness)));
+      mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-thickness) - 1px), #000 calc(100% - var(--ring-thickness)));
+    }
+
+    .ring::after {
+      content: "";
+      position: absolute;
+      inset: calc(var(--ring-thickness) - 1px);
+      border-radius: inherit;
+      border: 1px solid rgba(255, 244, 190, 0.18);
+      box-shadow:
+        0 0 0 1px rgba(74, 48, 25, 0.18),
+        inset 0 0 10px rgba(0, 0, 0, 0.34);
+      pointer-events: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--soft-text);
+      font-size: 14px;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      color: var(--brass-light);
+      outline: none;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--brass-light);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(44px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: 0;
+      font-weight: 500;
+      overflow-wrap: break-word;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 26px 0 0;
+      color: var(--soft-text);
+      font-size: 20px;
+    }
+
+    main {
+      padding: 46px 0 72px;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 0.45fr 1fr;
+      gap: 46px;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      font-weight: 500;
+    }
+
+    .section p {
+      margin: 0;
+      color: var(--soft-text);
+      font-size: 18px;
+    }
+
+    .panel {
+      padding: 28px;
+      border-radius: 22px;
+      background:
+        linear-gradient(150deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 42%, rgba(200, 165, 107, 0.055)),
+        linear-gradient(180deg, rgba(21, 38, 50, 0.92), rgba(12, 24, 34, 0.92));
+      border: 1px solid var(--line);
+      box-shadow:
+        0 22px 48px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      white-space: normal;
+    }
+
+    .button-primary {
+      color: #091018;
+      background:
+        linear-gradient(135deg, #ffffff 0%, #c9d3d4 30%, #7f9097 52%, #e8eeee 78%, #aebabe 100%);
+      border: 1px solid rgba(255, 255, 255, 0.48);
+    }
+
+    .button-secondary {
+      color: #f3eee5;
+      background: rgba(14, 27, 37, 0.94);
+      border: 1px solid rgba(240, 214, 154, 0.55);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 32px 0 54px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer strong {
+      color: var(--brass-light);
+      letter-spacing: 0.16em;
+    }
+
+    footer a {
+      color: var(--soft-text);
+      text-decoration: none;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 28px, 1040px);
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 46px;
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .button {
+        width: 100%;
+        padding: 12px 18px;
+        font-size: 12px;
+        letter-spacing: 0.055em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="topbar">
+        <a class="brand" href="/">
+          <span class="ring" aria-hidden="true"></span>
+          <span>OEVIA</span>
+        </a>
+        <nav class="nav" aria-label="Huvudnavigation">
+          <a href="/">Startsida</a>
+          <a href="mailto:hello@oevia.se">hello@oevia.se</a>
+        </nav>
+      </div>
+
+      <p class="eyebrow">Om OEVIA</p>
+      <h1>Medicinsk bedömning med tid, kontinuitet och helhet.</h1>
+      <p class="lead">OEVIA är en privatläkarmottagning i Göteborg och online i Sverige. Den här sidan är en kort struktur för mer information om arbetssätt, tjänster och priser.</p>
+    </header>
+
+    <main>
+      <section class="section" id="psykiatrisk-bedomning">
+        <h2>Psykiatrisk bedömning</h2>
+        <div class="panel">
+          <p>Bedömning vid stress, ångest, sömnproblem, nedstämdhet och depression. Fokus ligger på medicinsk diagnostik, funktionsnivå och en tydlig plan för nästa steg.</p>
+        </div>
+      </section>
+
+      <section class="section" id="medicinsk-utredning">
+        <h2>Medicinsk utredning av bakomliggande tillstånd</h2>
+        <div class="panel">
+          <p>Kroppsliga faktorer som hormonbalans, näringsstatus, läkemedel, tidigare sjukdomar och provsvar kan vägas in när det är relevant för helheten.</p>
+        </div>
+      </section>
+
+      <section class="section" id="behandling">
+        <h2>Behandling &amp; uppföljning</h2>
+        <div class="panel">
+          <p>Behandlingen kan omfatta läkemedel, provtagning, genomgång av tidigare behandling och strukturerad uppföljning av effekt, biverkningar och vardagsfunktion.</p>
+        </div>
+      </section>
+
+      <section class="section" id="priser">
+        <h2>Priser och hur det fungerar</h2>
+        <div class="panel">
+          <p>Pris- och bokningsinformation uppdateras separat. För aktuell tidbokning används BokaDirekt, och frågor kan skickas via mejl.</p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://www.bokadirekt.se/places/oevia-lakare-136179" target="_blank" rel="noopener">Boka tid via BokaDirekt</a>
+            <a class="button button-secondary" href="mailto:hello@oevia.se">Skriv ett meddelande</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- För dig som vill förstå hälsa och psykisk ohälsa ur ett bredare medicinskt perspektiv finns texter inom Metabolism X. -->
+    </main>
+
+    <footer>
+      <div><strong>OEVIA</strong> · Privatläkarmottagning i Göteborg</div>
+      <a href="mailto:hello@oevia.se">hello@oevia.se</a>
+    </footer>
+  </div>
+</body>
+</html>

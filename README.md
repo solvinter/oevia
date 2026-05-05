@@ -1,10 +1,12 @@
-# Oevia
+# OEVIA
 
-Statisk landningssida for Oevia.
+Statisk landningssida for OEVIA.
 
 ## Struktur
 
 - `index.html` - publik landningssida.
+- `om.html` - kort informationssida for tjänster, arbetssätt och priser.
+- `bokning.html` - enkel noindex-sida for bokningsflöde och annonser.
 - `CNAME` - GitHub Pages-domän för `oevia.se`.
 - `robots.txt` och `sitemap.xml` - grundläggande indexeringssignaler för sökmotorer.
 - `assets/` - bilder, CSS och JavaScript nar sidan bryts ut i separata filer.
@@ -23,7 +25,7 @@ Oppna sedan `http://localhost:8080`.
 
 ## Att gora fore publicering
 
-- Byt BokaDirekt-lanken i `index.html` till Oevias publika bokningssida.
+- Byt BokaDirekt-lanken i `index.html` till OEVIA:s publika bokningssida.
 - Bekrafta adress, e-post och eventuell juridisk sidfot.
 - Lagga till favicon, Open Graph-bild och analytics endast om det behovs.
 - Flytta inline CSS till `assets/css/` nar sidan vaxer.
