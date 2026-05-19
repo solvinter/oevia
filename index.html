@@ -78,18 +78,17 @@
   }
 
   body {
-    margin: 0;
-    min-height: 100vh;
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    line-height: 1.58;
-    background:
-  radial-gradient(circle at 50% -10rem, rgba(228, 194, 123, 0.08), transparent 28rem),
-  radial-gradient(circle at 82% 18%, rgba(185, 138, 72, 0.06), transparent 24rem),
-  radial-gradient(circle at 16% 68%, rgba(255, 255, 255, 0.025), transparent 30rem),
-  linear-gradient(145deg, #030303 0%, #090807 48%, #040403 100%);
-    overflow-x: hidden;
-  }
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.58;
+  background:
+    radial-gradient(circle at 50% -10rem, rgba(185, 138, 72, 0.055), transparent 26rem),
+    radial-gradient(circle at 82% 18%, rgba(185, 138, 72, 0.035), transparent 24rem),
+    linear-gradient(145deg, #020202 0%, #070605 48%, #030302 100%);
+  overflow-x: hidden;
+}
 
   body::before {
     content: "";
@@ -140,15 +139,14 @@
   }
 
   .logo-image {
-    width: min(320px, 72vw);
-    height: auto;
-    display: block;
-    border-radius: 30px;
-    box-shadow:
-      0 34px 100px rgba(0, 0, 0, 0.62),
-      0 0 70px rgba(185, 138, 72, 0.08);
-  }
-
+  width: min(320px, 72vw);
+  height: auto;
+  display: block;
+  border-radius: 30px;
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.72),
+    0 0 32px rgba(185, 138, 72, 0.04);
+}
   .brand-word {
     display: none;
   }
