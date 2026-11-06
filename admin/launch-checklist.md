@@ -1,7 +1,7 @@
 # Lanseringschecklista
 
 - Kontrollera doman och DNS for `oevia.se`.
-- Verifiera att bokningslanken gar till ratt BokaDirekt-sida.
+- Verifiera att kontaktlänkarna går till `hello@oevia.se`.
 - Bekrafta sidans kontaktuppgifter.
 - Testa sidan i mobil, surfplatta och desktop.
 - Kontrollera sidtitel och meta description.
